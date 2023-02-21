@@ -6,7 +6,6 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.FXMLDocumentController">
    <children>
       <TableView layoutX="14.0" layoutY="195.0" prefHeight="191.0" prefWidth="574.0">
@@ -18,8 +17,8 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <Button fx:id="dellbtn" layoutX="496.0" layoutY="143.0" mnemonicParsing="false" prefHeight="33.0" onAction="#onDel" prefWidth="90.0" text="Изтрий" />
-      <Button layoutX="14.0" layoutY="143.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="90.0" text="Изчисти" />
+      <Button fx:id="dellbtn" layoutX="496.0" layoutY="143.0" mnemonicParsing="false" onAction="#onDel" prefHeight="33.0" prefWidth="90.0" text="Изтрий" />
+      <Button fx:id="clearbtn" layoutX="14.0" layoutY="143.0" mnemonicParsing="false" onAction="#onClear" prefHeight="33.0" prefWidth="90.0" text="Изчисти" />
       <ChoiceBox layoutX="14.0" layoutY="14.0" prefHeight="79.0" prefWidth="574.0" />
    </children>
 </AnchorPane>

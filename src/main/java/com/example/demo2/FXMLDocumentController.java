@@ -10,15 +10,18 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class FXMLDocumentController implements Initializable {
-    
+    @FXML
+    private TextField Modellbl,Infolbl,Piecelbl,Model1lbl;
+
     @FXML
     private Label lbl1,lbl2;
     
     @FXML
-    private Button btn1,btn2,editbtn,edittbtn,delbtn,dellbtn,addbtn,adddbtn;
+    private Button btn1,btn2,editbtn,edittbtn,delbtn,dellbtn,addbtn,adddbtn,clearbtn;
     
     @FXML
     private void onEdit (ActionEvent event) throws Exception {
@@ -64,6 +67,7 @@ public class FXMLDocumentController implements Initializable {
         Stage stage;
         Parent root;
 
+
         if(event.getSource()==addbtn){
             stage = (Stage) addbtn.getScene().getWindow();
             root = FXMLLoader.load(getClass().getResource("view-add.fxml"));
@@ -75,5 +79,15 @@ public class FXMLDocumentController implements Initializable {
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
+    }
+    @FXML
+    private  void onClear(ActionEvent event) throws Exception{
+        Modellbl.clear();
+        Infolbl.clear();
+        Piecelbl.clear();
+    }
+    @FXML
+    private  void onClear1(ActionEvent event) throws Exception{
+        Model1lbl.clear();
     }
 }

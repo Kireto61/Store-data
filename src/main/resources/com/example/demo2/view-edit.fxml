@@ -7,7 +7,6 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo2.FXMLDocumentController">
    <children>
       <TableView layoutX="14.0" layoutY="164.0" prefHeight="222.0" prefWidth="570.0">
@@ -16,9 +15,9 @@
           <TableColumn prefWidth="323.0" text="C2" />
         </columns>
       </TableView>
-      <Button fx:id="edittbtn" layoutX="504.0" layoutY="125.0"  onAction="#onEdit" mnemonicParsing="false" text="редактирай" />
-      <Button layoutX="14.0" layoutY="125.0" mnemonicParsing="false" text="изчисти" />
+      <Button fx:id="edittbtn" layoutX="504.0" layoutY="125.0" mnemonicParsing="false" onAction="#onEdit" text="редактирай" />
+      <Button fx:id="clearbtn" layoutX="14.0" layoutY="125.0" mnemonicParsing="false" onAction="#onClear1" text="изчисти" />
       <ChoiceBox layoutX="14.0" layoutY="14.0" prefHeight="42.0" prefWidth="570.0" />
-      <TextField layoutX="17.0" layoutY="73.0" prefHeight="42.0" prefWidth="114.0" />
+      <TextField fx:id="Model1lbl" layoutX="17.0" layoutY="73.0" prefHeight="42.0" prefWidth="114.0" />
    </children>
 </AnchorPane>
